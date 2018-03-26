@@ -1,0 +1,9 @@
+/* Main Background and Side Navigation Interactive */
+
+.main {
+    background-image: url("images/mainbg.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
