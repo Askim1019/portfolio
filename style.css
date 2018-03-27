@@ -46,13 +46,18 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    position: relative;
 }
 
 /* Home/Landing Page intro */
-
 h1 {
     font-size: 50px;
+}
 
+header {
+    position: relative;
+    top: 150px;
+    left: 100px;
 }
 
 
