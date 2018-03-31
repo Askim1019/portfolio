@@ -169,7 +169,7 @@ h1 {
 }
 
 .timeline ul li:nth-child(even) div {
-  left: -439px;
+  left: -465px;
 }
 
 .timeline ul li:nth-child(even) div::before {
