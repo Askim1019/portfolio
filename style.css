@@ -1,10 +1,7 @@
-/*
-
+ 
 * {
     outline: 1px solid red;
-}
-
-*/
+} 
 
 body {
     transition: background-color .5s;
@@ -22,7 +19,7 @@ body {
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 150px;
 }
 
 .sidenav a {
@@ -64,6 +61,7 @@ body {
 /* Home/Landing Page intro */
 h1 {
     font-size: 50px;
+    text-align: center;
 }
 
 header {
@@ -81,7 +79,8 @@ header h1 {
 header p {
     padding: 15px;
     line-height: 35px;
-    font-size: 25px;
+    font-size: 22px;
+    text-align: center;
 }
 
 .emphasize {
@@ -89,10 +88,42 @@ header p {
 }
 
 .social-links {
-    border: 1px solid blue;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px 20px;
 }
 
+.fa-github-square {
+  color: #252628;
+}
 
+.fa-github-square:hover{
+  color: #91bbff;
+}
+
+.fa-linkedin {
+  color: #252628;
+}
+
+.fa-linkedin:hover {
+  color: #2f68c4;
+}
+
+.fa-twitter-square {
+  color: #252628;
+}
+
+.fa-twitter-square:hover {
+  color: #2aa3ef;
+}
+
+.fa-stack-overflow {
+  color: #252628;
+}
+
+.fa-stack-overflow:hover {
+  color: #f27f33;
+}
 /* timeline css */
 
 .intro {
