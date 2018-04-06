@@ -1,7 +1,12 @@
-/*  
+/* 
 * {
     outline: 1px solid red;
-}  */
+}
+ */
+/* FONTS */
+/* font-family: 'Ubuntu', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Do Hyeon', sans-serif; */
 
 body {
     transition: background-color .5s;
@@ -60,6 +65,8 @@ body {
 
 /* Home/Landing Page intro */
 h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
     font-size: 50px;
     text-align: center;
 }
@@ -77,9 +84,11 @@ header h1 {
 }
 
 header p {
+    font-family: 'Do hyeon', sans-serif;
     padding: 15px;
-    line-height: 35px;
+    line-height: 25px;
     font-size: 22px;
+    letter-spacing: 1px;
     text-align: center;
 }
 
@@ -136,6 +145,22 @@ header p {
   text-align: center;
   padding: 50px 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
