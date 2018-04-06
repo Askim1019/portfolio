@@ -138,17 +138,29 @@ header p {
 
 
 /* PORTFOLIO SECTION */
-.profile-section {
+.portfolio-section {
   height: 100vh;
   width: 100%;
 }
 
-.profile-section h1 {
+.portfolio-section h1 {
   text-align: center;
   padding: 50px 0;
 }
 
+.profile {
+  height: 80%;
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
 
+.carousel-div {
+  height: 80%;
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
 
 
 
