@@ -153,6 +153,7 @@ header p {
   width: 50%;
   display: inline-block;
   float: left;
+  text-align: center;
 }
 
 .carousel-div {
@@ -162,8 +163,11 @@ header p {
   float: left;
 }
 
-
-
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
 
 
 
