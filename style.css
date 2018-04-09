@@ -1,8 +1,8 @@
-
+/* 
 * {
     outline: 1px solid red;
 }
-
+ */
 
 /* FONTS */
 /* font-family: 'Ubuntu', sans-serif;
@@ -14,6 +14,9 @@ body {
     transition: background-color .5s;
 }
 
+#wrapper {
+  transition: margin-left .5s;
+}
 
 /* Side Navigation With Opacity Animation */
 .sidenav {
@@ -51,7 +54,6 @@ body {
 }
 
 #main {
-    transition: margin-left .5s;
     padding: 16px;
     height: 100vh;
     background-image: url("images/background2.jpg");
@@ -63,8 +65,16 @@ body {
 
 #menuIcon {
     position: fixed;
+    z-index: 3;
+    left: 15px;
+    top: 15px;
+    padding: 5px 5px;
 }
 
+
+#menuIcon:hover {
+  background-color: rgba(196, 194, 194, 0.589);
+}
 /* Home/Landing Page intro */
 h1 {
     font-family: 'Oxygen', sans-serif;
@@ -138,14 +148,19 @@ header p {
 
 
 /* PORTFOLIO SECTION */
-.portfolio-section {
+#portfolio {
   height: 100vh;
   width: 100%;
 }
 
-.portfolio-section h1 {
+#portfolio h1 {
   text-align: center;
   padding: 50px 0;
+  position: relative;
+}
+
+.portfolio-section {
+  visibility: hidden;
 }
 
 .profile {

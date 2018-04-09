@@ -1,13 +1,13 @@
 function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("wrapper").style.marginLeft = "250px";
     document.getElementById("menuIcon").style.display = "none";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("wrapper").style.marginLeft= "0";
     document.getElementById("menuIcon").style.display = "block";
     document.body.style.backgroundColor = "white";
 }
@@ -44,5 +44,4 @@ function closeNav() {
   window.addEventListener("load", callbackFunc);
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
-
 })();
