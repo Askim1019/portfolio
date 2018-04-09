@@ -1,8 +1,7 @@
-/* 
-* {
+/*  * {
     outline: 1px solid red;
-}
- */
+}  */
+ 
 
 /* FONTS */
 /* font-family: 'Ubuntu', sans-serif;
@@ -151,6 +150,7 @@ header p {
 #portfolio {
   height: 100vh;
   width: 100%;
+  background-color: white;
 }
 
 #portfolio h1 {
@@ -169,6 +169,7 @@ header p {
   display: inline-block;
   float: left;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 .carousel-div {
@@ -185,14 +186,54 @@ header p {
 }
 
 
+.profile-info {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
 
+.info {
+  padding: 10px 10px;
+  display: block;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+}
 
+span {
+  font-weight: bold;
+}
 
+hr {
+  border: 1px solid black;
+  width: 50%;
+}
 
+.skills {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
 
+.skills h2 {
+  font-size: 35px;
+}
 
+.skills li { 
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: 'ubuntu', sans-serif;
+}
 
-
+.skills li:hover{
+  font-size: 25px;
+  background-color: rgba(120, 176, 240, 0.637);
+}
 
 
 
