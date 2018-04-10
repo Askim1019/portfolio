@@ -1,6 +1,6 @@
-/*  * {
+* {
     outline: 1px solid red;
-}  */
+}  
  
 
 /* FONTS */
@@ -212,6 +212,16 @@ hr {
   width: 50%;
 }
 
+.profile button {
+  background: rgba(156, 160, 160, 0.39);
+  width: 120px;
+  font-size: 20px;
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 25%;
+  border: 1px solid black;
+}
+
 .skills {
   width: 80%;
   margin-left: auto;
@@ -220,7 +230,8 @@ hr {
 }
 
 .skills h2 {
-  font-size: 35px;
+  font-size: 30px;
+  margin-top: 10px;
 }
 
 .skills li { 
