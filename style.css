@@ -172,12 +172,6 @@ header p {
   letter-spacing: 2px;
 }
 
-.carousel-div {
-  height: 80%;
-  width: 50%;
-  display: inline-block;
-  float: left;
-}
 
 .profile-img {
   width: 200px;
@@ -244,6 +238,14 @@ hr {
 .skills li:hover{
   font-size: 25px;
   background-color: rgba(120, 176, 240, 0.637);
+}
+
+/* CAROUSEL PORTION OF PORTFOLIO */
+.carousel-div {
+  height: 80%;
+  width: 50%;
+  display: inline-block;
+  float: left;
 }
 
 
