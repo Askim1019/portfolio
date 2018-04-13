@@ -213,8 +213,7 @@ hr {
 }
 
 .profile button {
-  width: 120px;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px 10px;
   text-align: center;
   background-color: white; 
@@ -235,7 +234,7 @@ hr {
 }
 
 .skills {
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
@@ -246,6 +245,8 @@ hr {
   margin-top: 10px;
 }
 
+
+
 .skills li { 
   padding: 10px 10px;
   font-size: 15px;
@@ -254,7 +255,7 @@ hr {
 }
 
 .skills li:hover{
-  font-size: 25px;
+  font-size: 20px;
   background-color: rgba(120, 176, 240, 0.637);
 }
 
@@ -262,6 +263,9 @@ hr {
 
 
 /* TIMELINE HEADER */
+#timeline-wrapper {
+
+}
 
 .intro {
   background: #252628;
@@ -419,11 +423,11 @@ time {
 }
 
 @keyframes button-expansion {
-  from {width: 120px;}
-  to {width: 480px;}
+  from {width: 30%;}
+  to {width: 100%;}
 }
 
 @keyframes button-reverse {
-  from {width:480px;}
-  to {width:120;}
+  from {width:100%;}
+  to {width:30%;}
 }
