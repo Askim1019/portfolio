@@ -220,8 +220,10 @@ hr {
   background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
-  animation: button-reverse;
-  -webkit-animation: button-reverse;
+  animation: button-reverse 1s;
+  -webkit-animation: button-reverse 1s;
+  animation-fill-mode: forwards;
+
 }
 
 .profile button:hover {
