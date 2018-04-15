@@ -65,4 +65,20 @@ function closeNav() {
       "transform": "rotateY("+currdeg+"deg)"
     });
   }
+
+  $("#homelink").click(function(){
+    $('html, body').animate({
+      scrollTop: $('#wrapper').offset().top}, 1000);
+    });
+
+  $("#portlink").click(function(){
+    $('html, body').animate({
+      scrollTop: $('#portfolio').offset().top}, 1000);
+    });
+  
+  $("#journeylink").click(function(){
+    $('html, body').animate({
+      scrollTop: $('.timeline-wrapper').offset().top},1000);
+    });
+  
 })();

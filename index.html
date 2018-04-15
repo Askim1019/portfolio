@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,59 +10,75 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="aos.css">
-    <link rel="icon" type="image/jpg"
-     href="images/profile.jpg" >
+    <link rel="icon" type="image/jpg" href="images/profile.jpg">
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Oxygen|Roboto|Ubuntu" rel="stylesheet">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" 
-    integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Journey</a>
+        <a href="#" id="homelink">Home</a>
+        <a href="#" id="portlink">Portfolio</a>
+        <a href="#" id="journeylink">Journey</a>
     </div>
 
     <span style="font-size:30px;cursor:pointer" id="menuIcon" onclick="openNav()">&#9776;</span>
 
     <div class="wrapper" id="wrapper">
 
-        <div class="container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" data-aos-easing:"ease-in-cubic">
+        <div class="container" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" data-aos-easing: "ease-in-cubic">
             <div id="main">
-                
+
 
                 <header>
                     <h1>Alex Kim</h1>
-                    <p class="typeIt"> A friendly and driven <span class="emphasize">Full-Stack Web Developer</span> 
+                    <p class="typeIt"> A friendly and driven
+                        <span class="emphasize">Full-Stack Web Developer</span>
                         from Illinois. Looking to make ideas come to life for businesses and people with a vision.
                     </p>
-                     
+
                     <div class="social-links">
-                        <a href="https://github.com/Askim1019" target="_blank"><i class="fab fa-github-square"></i></a>
-                        <a href="https://www.linkedin.com/in/askim1019/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://twitter.com/Askim1019" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                        <a href="https://stackoverflow.com/users/7480467/alex-kim" target="_blank"><i class="fab fa-stack-overflow"></i></a>
+                        <a href="https://github.com/Askim1019" target="_blank">
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/askim1019/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/Askim1019" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                        <a href="https://stackoverflow.com/users/7480467/alex-kim" target="_blank">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
                     </div>
                 </header>
             </div>
         </div>
 
-        
-        <section id="portfolio" data-aos="flip-right"  data-aos-duration="2000" data-aos-once:"true" data-aos-anchor-placement="top-center">
-            <h1>Portfolio</h1>
-            
+
+        <section id="portfolio" data-aos="flip-right" data-aos-duration="2000" data-aos-once: "true" data-aos-anchor-placement="top-center">
+            <h1 id="portHeader">Portfolio</h1>
+
             <div class="profile">
                 <img src="images/profile.jpg" class="profile-img" alt="alex kim profile picture" />
 
                 <hr>
 
                 <div class="profile-info">
-                    <div class="info"><span>Name:</span> Alex Kim</div>
-                    <div class="info"><span>Email:</span> Askim1019@gmail.com</div>
-                    <div class="info"><span>Phone:</span> (630)251-7759</div>
-                    <div class="info"><a href="resume.pdf" target="_blank"><button class="button resume-btn">Resume</button></a></div>
+                    <div class="info">
+                        <span>Name:</span> Alex Kim</div>
+                    <div class="info">
+                        <span>Email:</span> Askim1019@gmail.com</div>
+                    <div class="info">
+                        <span>Phone:</span> (630)251-7759</div>
+                    <div class="info">
+                        <a href="resume.pdf" target="_blank">
+                            <button class="button resume-btn">Resume</button>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="skills">
@@ -80,80 +97,172 @@
                     </ul>
                 </div>
 
-           
-            </div> 
+
+            </div>
 
             <div class="carousel-div">
-                
+                <div class="carousel-wrapper">
+                    <span id="item-1"></span>
+                    <span id="item-2"></span>
+                    <span id="item-3"></span>
+                    <span id="item-4"></span>
+                    <span id="item-5"></span>
+                    <span id="item-6"></span>
+
+                    <div class="carousel-item item-1">
+                        <div class="github-link">
+                            <a href="https://github.com/Askim1019" target="_blank">
+                                <i class="fab fa-github-square" id="portfolioLinks"></i>
+                            </a>
+                            <a href="https://railstutorialaskim.herokuapp.com/" target="_blank">
+                                <i class="fas fa-eye" id="portfolioLinks"></i>
+                            </a>
+                        </div>
+                        <a class="arrow arrow-prev" href="#item-6"></a>
+                        <a class="arrow arrow-next" href="#item-2"></a>
+                    </div>
+
+                    <div class="carousel-item item-2">
+                        <div class="github-link">
+                            <a href="https://github.com/Askim1019/gci-website" target="_blank">
+                                <i class="fab fa-github-square" id="portfolioLinks"></i>
+                            </a>
+                            <a href="http://gcius.net/" target="_blank">
+                                <i class="fas fa-eye" id="portfolioLinks"></i>
+                            </a>
+                        </div>
+                        <a class="arrow arrow-prev" href="#item-1"></a>
+                        <a class="arrow arrow-next" href="#item-3"></a>
+                    </div>
+
+                    <div class="carousel-item item-3">
+                        <div class="github-link">
+                            <a href="https://github.com/Askim1019" target="_blank">
+                                <i class="fab fa-github-square" id="portfolioLinks"></i>
+                            </a>
+                            <a href="http://kimandkim.com/" target="_blank">
+                                <i class="fas fa-eye" id="portfolioLinks"></i>
+                            </a>
+                        </div>
+                        <a class="arrow arrow-prev" href="#item-2"></a>
+                        <a class="arrow arrow-next" href="#item-4"></a>
+                    </div>
+
+                    <div class="carousel-item item-4">
+                        <div class="github-link">
+                            <a href="https://github.com/Askim1019/unit-4-game" target="_blank">
+                                <i class="fab fa-github-square" id="portfolioLinks"></i>
+                            </a>
+                            <a href="https://askim1019.github.io/unit-4-game/" target="_blank">
+                                <i class="fas fa-eye" id="portfolioLinks"></i>
+                            </a>
+                        </div>
+                        <a class="arrow arrow-prev" href="#item-3"></a>
+                        <a class="arrow arrow-next" href="#item-5"></a>
+                    </div>
+
+                    <div class="carousel-item item-5">
+                        <div class="github-link">
+                            <a href="https://github.com/Askim1019/Word-Guess-Game" target="_blank">
+                                <i class="fab fa-github-square" id="portfolioLinks"></i>
+                            </a>
+                            <a href="https://askim1019.github.io/Word-Guess-Game/" target="_blank">
+                                <i class="fas fa-eye" id="portfolioLinks"></i>
+                            </a>
+                        </div>
+                        <a class="arrow arrow-prev" href="#item-4"></a>
+                        <a class="arrow arrow-next" href="#item-6"></a>
+                    </div>
+
+                    <div class="carousel-item item-6">
+                        <div class="github-link">
+                            <a href="https://github.com/Askim1019/lol-rpg" target="_blank">
+                                <i class="fab fa-github-square" id="portfolioLinks"></i>
+                            </a>
+                            <a href="https://askim1019.github.io/lol-rpg/" target="_blank">
+                                <i class="fas fa-eye" id="portfolioLinks"></i>
+                            </a>
+                        </div>
+                        <a class="arrow arrow-prev" href="#item-5"></a>
+                        <a class="arrow arrow-next" href="#item-1"></a>
+                    </div>
+                </div>
+
             </div>
         </section>
 
-        <div class="timeline-wrapper" data-aos="flip-left"  data-aos-duration="2000" data-aos-easing: "ease-in" data-aos-once:"true" data-aos-anchor-placement="top-center">
+        <div class="timeline-wrapper" id="timeline-wrapper" data-aos="flip-left" data-aos-duration="2000" data-aos-easing: "ease-in" data-aos-once:
+            "true" data-aos-anchor-placement="top-center">
             <section class="intro">
                 <div class="timeline-container">
                     <h1>The Journey</h1>
                 </div>
             </section>
-            
+
             <section class="timeline">
-            <ul>
-                <li>
-                <div>
-                    <time>January 2017</time>The journey begins with my first programming class through coursera that taught basics of Python syntax.
-                    Joined Github in late January.
-                </div>
-                </li>
-                <li>
-                <div>
-                    <time>February 2017</time>Joined Codecademy to learn HTML, CSS, SQL, and Command Line Basics. Created my first Python calculator with simple GUI.
-                    Also, created a script to keep track of consumer budget through monthly expenses.
-                </div>
-                </li>
-                <li>
-                <div>
-                    <time>March 2017</time> Shadowed Enova International and their Software Engineers, Architects, and Data Analytics. This is when I decided to pursue
-                    a career change into the field of Software Development.
-                </div>
-                </li>
-                <li>
-                <div>
-                    <time>April 2017</time>Continued to code through FreeCodeCamp HTML, CSS, JavaScript. Asynchronously learned Ruby, Ruby on Rails, and computer science
-                    fundamentals.
-                </div>
-                </li>
-                <li>
-                <div>
-                    <time>May 2017</time>Begin learning algorithms and delving into LevelUpRails, continue with Codecademy, FreeCodeCamp, and coding on a daily basis. Created 
-                    a toy app with rails to produce a simple CRUD app deployed on Heroku.
-                </div>
-                </li>
-                <li>
-                <div>
-                    <time>June/July 2017</time>Went through the capstone of learn-rails to make authentication and a newsletter that was deployed on Heroku with Ruby on Rails.
-                    Attend a summer meetup in Downtown Chicago.
-                </div>
-                </li>
-                <li>
-                <div>
-                    <time>Fall 2017</time>Create a website with HTML/CSS/Bootstrap for a small accounting firm at kimandkim.com. Involved in the hosting, development, and deployment of the web page.
-                    Continue practicing algorithms. Constant use of Linux, Windows, and 
-                    Mac operating systems for coding. Learn about Agile methodologies and Test Driven Development.
-                </div>
-                </li>
-                <li>
-                <div>
-                    <time>January 2018</time>Completed a fully deployed app called sample app with Ruby on Rails. Take mutliple Udemy courses on SQL, Node.js, and Java.
-                    At this time received many interviews including phone and in person. Create a second hosted Bootstrap app for Global Creative Innovation at gcius.net. Partake
-                    in Advent of Code during the Christmas Holidays for problems in algorithms.
-                </div>
-                </li>
-                <li>
-                <div>
-                    <time>February 2018</time> Join Northwestern Coding Bootcamp to learn the MERN stack with JavaScript Language and Frameworks. Also, learning MySQL, Python, Firebase, and 
-                    continue with algorithmic problems.
-                </div>
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <div>
+                            <time>January 2017</time>The journey begins with my first programming class through coursera that taught
+                            basics of Python syntax. Joined Github in late January.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>February 2017</time>Joined Codecademy to learn HTML, CSS, SQL, and Command Line Basics. Created
+                            my first Python calculator with simple GUI. Also, created a script to keep track of consumer
+                            budget through monthly expenses.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>March 2017</time> Shadowed Enova International and their Software Engineers, Architects, and
+                            Data Analytics. This is when I decided to pursue a career change into the field of Software Development.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>April 2017</time>Continued to code through FreeCodeCamp HTML, CSS, JavaScript. Asynchronously
+                            learned Ruby, Ruby on Rails, and computer science fundamentals.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>May 2017</time>Begin learning algorithms and delving into LevelUpRails, continue with Codecademy,
+                            FreeCodeCamp, and coding on a daily basis. Created a toy app with rails to produce a simple CRUD
+                            app deployed on Heroku.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>June/July 2017</time>Went through the capstone of learn-rails to make authentication and a newsletter
+                            that was deployed on Heroku with Ruby on Rails. Attend a summer meetup in Downtown Chicago.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>Fall 2017</time>Create a website with HTML/CSS/Bootstrap for a small accounting firm at kimandkim.com.
+                            Involved in the hosting, development, and deployment of the web page. Continue practicing algorithms.
+                            Constant use of Linux, Windows, and Mac operating systems for coding. Learn about Agile methodologies
+                            and Test Driven Development.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>January 2018</time>Completed a fully deployed app called sample app with Ruby on Rails. Take
+                            mutliple Udemy courses on SQL, Node.js, and Java. At this time received many interviews including
+                            phone and in person. Create a second hosted Bootstrap app for Global Creative Innovation at gcius.net.
+                            Partake in Advent of Code during the Christmas Holidays for problems in algorithms.
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <time>February 2018</time> Join Northwestern Coding Bootcamp to learn the MERN stack with JavaScript
+                            Language and Frameworks. Also, learning MySQL, Python, Firebase, and continue with algorithmic
+                            problems.
+                        </div>
+                    </li>
+                </ul>
             </section>
         </div>
     </div>
@@ -165,4 +274,5 @@
         AOS.init();
     </script>
 </body>
+
 </html>

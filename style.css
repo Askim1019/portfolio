@@ -1,7 +1,6 @@
-* {
+/*  * {
     outline: 1px solid red;
-}  
- 
+}  */
 
 /* FONTS */
 /* font-family: 'Ubuntu', sans-serif;
@@ -113,6 +112,10 @@ header p {
     padding: 20px 20px;
 }
 
+.social-links a {
+  text-decoration: none;
+}
+
 .fa-github-square {
   color: #252628;
 }
@@ -148,7 +151,6 @@ header p {
 
 /* PORTFOLIO SECTION */
 #portfolio {
-  height: 100vh;
   width: 100%;
   background-color: white;
 }
@@ -167,7 +169,6 @@ header p {
   height: 80%;
   width: 50%;
   display: inline-block;
-  float: left;
   text-align: center;
   letter-spacing: 2px;
 }
@@ -184,7 +185,6 @@ header p {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25px;
 }
 
 .info {
@@ -231,7 +231,6 @@ hr {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
 }
 
 .skills h2 {
@@ -253,32 +252,159 @@ hr {
   background-color: rgba(120, 176, 240, 0.637);
 }
 
+
 /* CAROUSEL PORTION OF PORTFOLIO */
 .carousel-div {
   height: 80%;
-  width: 50%;
+  width: 48%;
   display: inline-block;
-  float: left;
+  float: right;
+}
+
+.carousel-wrapper {
+  height:450px;
+  position:relative;
+  width:80%;
+  margin:50px auto;
+}
+
+.carousel-item {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+  color: white;
+  border: 2px solid black;
+}
+
+.github-link {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  font-size: 45px;
+  text-align: center;
+  background: rgba(96, 96, 97, 0.808);
+}
+
+.github-link a {
+  text-decoration: none;
+}
+
+#portfolioLinks {
+  color: rgba(213, 213, 224, 0.808);
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#portfolioLinks:hover {
+  color: rgba(66, 222, 233, 0.829);
+}
+
+
+.arrow {
+  position:absolute;
+  top:0;
+  display:block;
+  width:50px;
+  height:100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+}
+
+.arrow-prev {
+  left:0;
+}
+ 
+.arrow-next {
+    right:0;
+    -webkit-transform: rotate(180deg);
+     transform: rotate(180deg);
+  }
+
+.light{
+  color:white;
+}
+
+
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background:url('https://i.imgur.com/F9q8E50.png');
+  background-size:cover;
+  background-position: center;
+  }
+
+.item-2 {
+  background:url('https://i.imgur.com/5cR4Z4N.png');
+  background-size:cover;
+  background-position: center;
+}
+
+.item-3 {
+  background:url('https://i.imgur.com/Jc2uLT1.png');
+  background-size:cover;
+  background-position: center;
+}
+
+.item-4 {
+  background:url('https://i.imgur.com/Kl9GvaZ.png');
+  background-size:cover;
+  background-position: center;
+}
+
+.item-5 {
+  background:url('https://i.imgur.com/yjB40J7.png');
+  background-size:cover;
+  background-position: center;
+}
+
+.item-6 {
+  background:url('https://i.imgur.com/umME64J.png');
+  background-size:cover;
+  background-position: center;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4,
+#item-5:target ~ .item-5, #item-5:target ~ .item-5, #item-6:target ~ .item-6{
+    z-index: 3;
+    opacity: 1;
+  }
 }
 
 
 
 
 /* TIMELINE HEADER */
-#timeline-wrapper {
-
-}
 
 .intro {
   background: #252628;
-  padding: 50px 0;
 }
 
 .timeline-container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   color: white;
+  background: #252628;
+  padding: 50px 0;
 }
 
 /* TIMELINE
@@ -419,7 +545,11 @@ time {
   }
 }
 
-@media screen and (max-height: 450px) {
+@media (max-width: 480px) {
+  .arrow, .light .arrow {
+    background-size: 10px;
+    background-position: 10px 50%;
+  }
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
