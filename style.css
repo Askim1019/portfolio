@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: 1px solid red;
-}  
+}  */
  
 
 /* FONTS */
@@ -111,6 +111,10 @@ header p {
     text-align: center;
     font-size: 50px;
     padding: 20px 20px;
+}
+
+.social-links a {
+  text-decoration: none;
 }
 
 .fa-github-square {
@@ -259,10 +263,10 @@ hr {
 }
 
 .carousel-wrapper {
-  height:400px;
+  height:450px;
   position:relative;
   width:80%;
-  margin:0 auto;
+  margin:50px auto;
 }
 
 .carousel-item {
@@ -275,6 +279,7 @@ hr {
   opacity:0;
   transition: all 0.5s ease-in-out;
   color: white;
+  border: 2px solid black;
 }
 
 .github-link {
@@ -283,15 +288,23 @@ hr {
   width: 80%;
   font-size: 45px;
   text-align: center;
-  background: rgba(3, 3, 3, 0.349);
+  background: rgba(96, 96, 97, 0.808);
 }
 
-.github-link button {
-  width: 30%;
-  font-size: 20px;
-  padding: 10px;
-  vertical-align: top;
+.github-link a {
+  text-decoration: none;
 }
+
+#portfolioLinks {
+  color: rgba(213, 213, 224, 0.808);
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#portfolioLinks:hover {
+  color: rgba(66, 222, 233, 0.829);
+}
+
 
 .arrow {
   position:absolute;
@@ -327,19 +340,19 @@ hr {
 .item-1 {
   z-index: 2;
   opacity: 1;
-  background:url('https://i.imgur.com/B7O1Ffd.png');
+  background:url('https://i.imgur.com/F9q8E50.png');
   background-size:cover;
   background-position: center;
   }
 
 .item-2 {
-  background:url('https://i.imgur.com/yjB40J7.png');
+  background:url('https://i.imgur.com/5cR4Z4N.png');
   background-size:cover;
   background-position: center;
 }
 
 .item-3 {
-  background:url('https://i.imgur.com/umME64J.png');
+  background:url('https://i.imgur.com/Jc2uLT1.png');
   background-size:cover;
   background-position: center;
 }
@@ -351,7 +364,13 @@ hr {
 }
 
 .item-5 {
-  background:url('https://i.imgur.com/F9q8E50.png');
+  background:url('https://i.imgur.com/yjB40J7.png');
+  background-size:cover;
+  background-position: center;
+}
+
+.item-6 {
+  background:url('https://i.imgur.com/umME64J.png');
   background-size:cover;
   background-position: center;
 }
@@ -364,21 +383,12 @@ hr {
     opacity: 1;
   }
 
-#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+#item-2:target ~ .item-2, #item-3:target ~ .item-3, #item-4:target ~ .item-4,
+#item-5:target ~ .item-5, #item-5:target ~ .item-5, #item-6:target ~ .item-6{
     z-index: 3;
     opacity: 1;
   }
-
-#item-4:target ~ .item-4 {
-  z-index: 3;
-  opacity: 1;
 }
-
-#item-5:target ~ .item-5 {
-  z-index: 3;
-  opacity: 1;
-}
-
 
 
 
