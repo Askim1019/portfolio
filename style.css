@@ -264,6 +264,7 @@ hr {
   width:80%;
   margin:0 auto;
 }
+
 .carousel-item {
   position:absolute;
   top:0;
@@ -273,13 +274,26 @@ hr {
   padding:25px 50px;
   opacity:0;
   transition: all 0.5s ease-in-out;
+  color: white;
 }
 
-.carousel-item h2 {
-
+.github-link {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  font-size: 45px;
+  text-align: center;
+  background: rgba(3, 3, 3, 0.349);
 }
 
-.arrow{
+.github-link button {
+  width: 30%;
+  font-size: 20px;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.arrow {
   position:absolute;
   top:0;
   display:block;
@@ -289,11 +303,11 @@ hr {
   background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
 }
 
-.arrow-prev{
+.arrow-prev {
   left:0;
 }
  
-.arrow-next{
+.arrow-next {
     right:0;
     -webkit-transform: rotate(180deg);
      transform: rotate(180deg);
@@ -317,15 +331,29 @@ hr {
   background-size:cover;
   background-position: center;
   }
-.item-2{
+
+.item-2 {
   background:url('https://i.imgur.com/yjB40J7.png');
-   background-size:cover;
-   background-position: center;
+  background-size:cover;
+  background-position: center;
 }
-.item-3{
+
+.item-3 {
   background:url('https://i.imgur.com/umME64J.png');
-   background-size:cover;
-   background-position: center;
+  background-size:cover;
+  background-position: center;
+}
+
+.item-4 {
+  background:url('https://i.imgur.com/Kl9GvaZ.png');
+  background-size:cover;
+  background-position: center;
+}
+
+.item-5 {
+  background:url('https://i.imgur.com/F9q8E50.png');
+  background-size:cover;
+  background-position: center;
 }
 
 *:target ~ .item-1 {
@@ -340,10 +368,16 @@ hr {
     z-index: 3;
     opacity: 1;
   }
+
+#item-4:target ~ .item-4 {
+  z-index: 3;
+  opacity: 1;
 }
 
-
-
+#item-5:target ~ .item-5 {
+  z-index: 3;
+  opacity: 1;
+}
 
 
 
