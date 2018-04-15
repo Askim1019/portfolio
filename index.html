@@ -20,9 +20,9 @@
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Journey</a>
+        <a href="#" id="homelink">Home</a>
+        <a href="#" id="portlink">Portfolio</a>
+        <a href="#" id="journeylink">Journey</a>
     </div>
 
     <span style="font-size:30px;cursor:pointer" id="menuIcon" onclick="openNav()">&#9776;</span>
@@ -60,7 +60,7 @@
 
 
         <section id="portfolio" data-aos="flip-right" data-aos-duration="2000" data-aos-once: "true" data-aos-anchor-placement="top-center">
-            <h1>Portfolio</h1>
+            <h1 id="portHeader">Portfolio</h1>
 
             <div class="profile">
                 <img src="images/profile.jpg" class="profile-img" alt="alex kim profile picture" />
@@ -191,7 +191,7 @@
             </div>
         </section>
 
-        <div class="timeline-wrapper" data-aos="flip-left" data-aos-duration="2000" data-aos-easing: "ease-in" data-aos-once:
+        <div class="timeline-wrapper" id="timeline-wrapper" data-aos="flip-left" data-aos-duration="2000" data-aos-easing: "ease-in" data-aos-once:
             "true" data-aos-anchor-placement="top-center">
             <section class="intro">
                 <div class="timeline-container">

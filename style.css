@@ -1,7 +1,6 @@
-/* * {
+/*  * {
     outline: 1px solid red;
 }  */
- 
 
 /* FONTS */
 /* font-family: 'Ubuntu', sans-serif;
@@ -393,23 +392,19 @@ hr {
 
 
 
-
-
-
-
-
 /* TIMELINE HEADER */
 
 .intro {
   background: #252628;
-  padding: 50px 0;
 }
 
 .timeline-container {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   color: white;
+  background: #252628;
+  padding: 50px 0;
 }
 
 /* TIMELINE
