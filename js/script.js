@@ -16,6 +16,31 @@ function closeNav() {
 (function() {
 
   'use strict';
+  function typeEffect(element, speed) {
+    var text = $(element).text();
+    $(element).html('');
+    
+    var i = 0;
+    var timer = setInterval(function() {
+      if (i < text.length) {
+        $(element).append(text.charAt(i));
+        i++;
+      } else {
+        clearInterval(timer);
+      }
+    }, speed);
+  }
+  
+   
+  var speed = 75;
+  var delay = $('#h1intro').text().length * speed + speed;
+  typeEffect($('#h1intro'), speed);
+
+  setTimeout(function(){
+    typeEffect($('#typeIt'), speed);
+  }, delay);
+  
+
 
   // define variables
   var items = document.querySelectorAll(".timeline li");

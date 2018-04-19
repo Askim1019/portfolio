@@ -100,10 +100,7 @@ header p {
     font-size: 22px;
     letter-spacing: 1px;
     text-align: center;
-}
-
-.emphasize {
-    color: blue;
+    color: rgba(70, 64, 64, 0.63);
 }
 
 .social-links {
@@ -387,7 +384,7 @@ hr {
     z-index: 3;
     opacity: 1;
   }
-}
+
 
 
 
