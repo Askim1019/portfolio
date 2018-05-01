@@ -549,14 +549,156 @@ time {
   }
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
 
-@keyframes button-expansion {
-  from {width: 30%;}
-  to {width: 100%;}
-}
 
-@keyframes button-reverse {
-  from {width:100%;}
-  to {width:30%;}
+  @keyframes button-expansion {
+    from {width: 30%;}
+    to {width: 100%;}
+  }
+
+  @keyframes button-reverse {
+    from {width:100%;}
+    to {width:30%;}
+  }
+
+  /* Home/Landing Page intro */
+  h1 {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+    width: 300px;
+  }
+
+  header {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    width: 30%;
+  }
+
+  header h1 {
+    padding: 10px;
+    font-size: 30px;
+  }
+
+  header p {
+    font-family: 'Do hyeon', sans-serif;
+    width: 300px;
+    padding: 5px;
+    line-height: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgba(70, 64, 64, 0.63);
+  }
+
+  .social-links {
+    text-align: center;
+    font-size: 30px;
+    width: 300px;
+    padding: 20px 20px;
+  }
+/* End Home page for mobile */
+
+
+  /* PORTFOLIO SECTION */
+  #portfolio {
+    width: 100%;
+    background-color: white;
+    display: block;
+  }
+
+  #portfolio h1 {
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    display: block;
+  }
+
+
+  .profile {
+    width: 100%;
+    display: block;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+
+  .profile-info {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .info {
+    padding: 10px 10px;
+    display: block;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  hr {
+    border: 1px solid black;
+    width: 50%;
+  }
+
+  .profile button {
+    font-size: 15px;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    animation: button-reverse 1s;
+    -webkit-animation: button-reverse 1s;
+    animation-fill-mode: forwards;
+
+  }
+
+  /* CAROUSEL PORTION OF PORTFOLIO */
+  .carousel-div {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carousel-wrapper {
+    height:450px;
+    position:relative;
+    width:80%;
+    margin:50px auto;
+    display: block;
+  }
+
+  .carousel-item {
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    opacity:0;
+    transition: all 0.5s ease-in-out;
+    color: white;
+    border: 2px solid black;
+  }
+
+  #timeline-wrapper {
+    display: none;
+  }
 }
