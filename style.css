@@ -218,10 +218,21 @@ hr {
 
 .profile button:hover {
   background-color: #008CBA;
+  
   animation: button-expansion 1s;
   -webkit-animation: button-expansion 1s;
   animation-fill-mode: forwards;
   cursor: pointer;
+}
+
+@keyframes button-expansion {
+  from {width: 30%;}
+  to {width: 100%;}
+}
+
+@keyframes button-reverse {
+  from {width:100%;}
+  to {width:30%;}
 }
 
 .skills {
@@ -550,16 +561,6 @@ time {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 
-
-  @keyframes button-expansion {
-    from {width: 30%;}
-    to {width: 100%;}
-  }
-
-  @keyframes button-reverse {
-    from {width:100%;}
-    to {width:30%;}
-  }
 
   /* Home/Landing Page intro */
   h1 {
