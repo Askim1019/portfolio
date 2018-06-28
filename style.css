@@ -382,6 +382,11 @@ hr {
   background-position: center;
 }
 
+.item-7 {
+  background:url('./images/burgerapp.png');
+  background-size:cover;
+  background-position: center;
+}
 *:target ~ .item-1 {
     opacity: 0;
   }
